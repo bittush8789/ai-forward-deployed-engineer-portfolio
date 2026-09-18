@@ -213,6 +213,21 @@ const projectData = {
     tech: ['FastAPI 0.110+', 'Python 3.11', 'Groq GPT-OSS-120B', 'ChromaDB', 'Kubernetes (Kind)', 'Web Speech API', 'Docker Compose', 'Pytest (100%)'],
     github: 'https://github.com/bittush8789/ai-fde-legal-document-assistant',
     demo: 'https://github.com/bittush8789/ai-fde-legal-document-assistant#readme'
+  },
+  'travelassist': {
+    title: 'TravelAssist AI: Enterprise Travel & Tourism Customer Support Assistant',
+    category: 'Airlines, OTAs & Hospitality | AI Forward Deployed Engineering',
+    image: 'projects/travel.png',
+    description: 'Forward deployed into airline and OTA operations to eliminate repetitive customer inquiry load (baggage limits, cancellation grace periods, refund timelines, and visa regulations) with strict zero-hallucination compliance and automated source document citations.',
+    architecture: 'Multi-container enterprise architecture combining FastAPI REST backend, dedicated ChromaDB vector container with HuggingFace MiniLM-L6 embeddings, strict cosine similarity thresholding (>= 0.70) with safe fallback, Groq LPU inference (openai/gpt-oss-120b), LangSmith real-time observability/token tracing, multi-tier security guardrails (prompt injection detection, regex PII redaction for passports & cards, automated visa advisory disclaimer), and MySQL 8.0 relational session/feedback audit storage.',
+    metrics: [
+      { label: 'Inference SLA', val: '< 1.5s Groq 120B' },
+      { label: 'Vector Relevance', val: '>= 0.70 Cosine' },
+      { label: 'Security Guard', val: 'PII & Injection' }
+    ],
+    tech: ['FastAPI', 'Python 3.11', 'LangChain', 'Groq GPT-OSS-120B', 'ChromaDB Docker', 'MySQL 8.0', 'LangSmith', 'Docker Compose'],
+    github: 'https://github.com/bittush8789/enterprise-travelassist-ai-fde-rag',
+    demo: 'https://github.com/bittush8789/enterprise-travelassist-ai-fde-rag#readme'
   }
 };
 

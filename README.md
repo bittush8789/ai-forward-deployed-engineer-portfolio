@@ -112,6 +112,17 @@ A modern, high-performance, and fully responsive personal portfolio for **Bittu 
   - 5-Layer AI Security Guardrails (input prompt injection filter, tenant RBAC, untrusted document sanitizer, and output citation integrity validator).
 - **Business Impact**: Sub-second clause discovery, elimination of ungrounded legal hallucination liability, Kubernetes Kind deployment readiness, and 12/12 automated pytest test suite coverage.
 
+#### 6. TravelAssist AI FDE RAG — Enterprise Travel & Tourism Customer Support Platform
+- **Repository**: [`bittush8789/enterprise-travelassist-ai-fde-rag`](https://github.com/bittush8789/enterprise-travelassist-ai-fde-rag)
+- **AI FDE Scope**: Forward deployed into airlines, online travel agencies (OTAs), and hospitality networks to offload high-volume support inquiries (baggage tier allowances, 24-hr grace cancellations, visa checklists, and refund turnaround SLAs) while preventing catastrophic hallucinated compensation promises.
+- **Enterprise Architecture**:
+  - Multi-container ChromaDB vector store with HuggingFace (`all-MiniLM-L6-v2`) embeddings and strict cosine similarity filtering (>= 0.70 threshold) with safe fallback.
+  - Ultra-fast Groq LPU inference engine (`openai/gpt-oss-120b`) coupled with real-time LangSmith latency & token tracking.
+  - Multi-tier AI Security: Prompt injection detection, automated regex PII masking for passports & credit cards, and mandatory official visa advisory disclaimers.
+  - MySQL 8.0 relational persistence with SQLAlchemy for session tracking, message audit logging, and thumbs-up/down user feedback collection.
+- **Business Impact**: < 1.5s response SLA, ~65% deflection of routine customer inquiries, 100% cited answers with source filenames and page numbers, and Docker Compose orchestration.
+
+
 
 ### 6. 📈 Experience Timeline
 - Chronological engineering trajectory detailing DevOps & MLOps engineering work at **EXL Service** (Noida, India).
@@ -160,7 +171,8 @@ New-portfolio/
 │   ├── Retails.png                  # RetailMind operations chatbot UI preview
 │   ├── bank.png                     # BankAssist AI enterprise banking knowledge portal
 │   ├── fintech.png                  # FinAssist GPT enterprise FinTech knowledge assistant
-│   └── legal.png                    # LegalAssist AI legal document intelligence preview
+│   ├── legal.png                    # LegalAssist AI legal document intelligence preview
+│   └── travel.png                   # TravelAssist AI customer support portal preview
 ├── css/
 │   └── style.css                    # Design system, CSS variables & responsive queries
 ├── js/

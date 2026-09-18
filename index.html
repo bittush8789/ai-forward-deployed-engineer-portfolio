@@ -1118,6 +1118,61 @@
               </div>
             </div>
           </div>
+
+          <!-- Project 6: TravelAssist AI FDE RAG -->
+          <div class="col-12 col-md-6 col-lg-4 project-item-col" data-category="ai-agent full-stack vision-data">
+            <div class="project-card shadow-sm h-100">
+              <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 220px;">
+                <img src="projects/travel.png" alt="TravelAssist AI Enterprise Customer Support Preview" class="project-img w-100 h-100" style="object-fit: cover; object-position: top center;"
+                  loading="lazy">
+                <div class="project-overlay">
+                  <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="travelassist">
+                    <i class="bi bi-eye-fill"></i> Architecture Preview
+                  </button>
+                </div>
+              </div>
+              <div class="project-content p-3 p-lg-4 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                  <div class="project-category-tag"><i class="bi bi-airplane-engines text-primary"></i> Travel & Hospitality FDE</div>
+                  <span class="badge bg-info-subtle text-info border border-info-subtle px-2 py-1 font-mono small">
+                    <i class="bi bi-shield-check"></i> Zero-Hallucination RAG
+                  </span>
+                </div>
+                <h3 class="project-title fs-5 mb-2">TravelAssist AI FDE RAG</h3>
+                
+                <!-- AI FDE Value Narrative -->
+                <div class="mb-3 small text-secondary flex-grow-1">
+                  <p class="mb-2">
+                    <strong class="text-white-subtle">FDE Engagement:</strong> Forward deployed into airlines and OTAs to automate high-volume traveler inquiries (baggage allowances, 24-hr grace periods, visa checklists, and refund SLAs) with strict anti-hallucination compliance.
+                  </p>
+                  <p class="mb-0">
+                    <strong class="text-white-subtle">Technical Architecture:</strong> Multi-container ChromaDB vector store, HuggingFace embeddings (`all-MiniLM-L6-v2`), strict cosine thresholding (>=0.70), Groq LPU inference (`gpt-oss-120b`), LangSmith observability, PII redaction, and MySQL 8.0 session logging.
+                  </p>
+                </div>
+
+                <div class="project-tags mb-3">
+                  <span class="project-tag"><i class="bi bi-shield-lock-fill text-danger"></i> PII Masking</span>
+                  <span class="project-tag"><i class="bi bi-activity text-success"></i> LangSmith</span>
+                  <span class="project-tag">LangChain</span>
+                  <span class="project-tag">FastAPI</span>
+                  <span class="project-tag">Groq 120B</span>
+                  <span class="project-tag">ChromaDB</span>
+                  <span class="project-tag">MySQL 8.0</span>
+                  <span class="project-tag">Docker Compose</span>
+                </div>
+                <div class="project-footer pt-3 border-top mt-auto" style="border-color: var(--border-color)!important;">
+                  <a href="https://github.com/bittush8789/enterprise-travelassist-ai-fde-rag" target="_blank" rel="noopener noreferrer"
+                    class="project-link fw-semibold small" aria-label="TravelAssist GitHub Repo">
+                    <i class="bi bi-github"></i> Repository
+                  </a>
+                  <a href="https://github.com/bittush8789/enterprise-travelassist-ai-fde-rag#readme" target="_blank" rel="noopener noreferrer"
+                    class="project-link text-cyan fw-semibold small" aria-label="TravelAssist System Documentation">
+                    FDE System Design <i class="bi bi-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
