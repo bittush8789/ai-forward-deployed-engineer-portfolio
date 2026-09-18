@@ -85,7 +85,13 @@ A modern, high-performance, and fully responsive personal portfolio for **Bittu 
   - Hybrid Retrieval combining ChromaDB dense embeddings with BM25 lexical keyword matching via Reciprocal Rank Fusion (RRF).
   - High-speed Redis 7.2 TTL query caching layer to eliminate redundant LLM inference costs by ~60%.
   - Enterprise Prompt Security powered by Groq LLaMA Prompt Guard 22M + heuristic safeguards against prompt injection exploits.
-- **Business Impact**: Sub-second POS decision support, 60% LLM token cost reduction, rapid onboarding of high-turnover retail teams, and one-command Docker Compose production deployment.
+#### 3. BankAssist AI FDE RAG — Enterprise Banking Knowledge Platform
+- **Repository**: [`bittush8789/enterprise-banking-fde-rag`](https://github.com/bittush8789/enterprise-banking-fde-rag)
+- **AI FDE Scope**: Forward deployed into enterprise banking institutions to streamline loan underwriting, KYC/AML directives, and enforce Zero-Trust PII masking across high-security financial workflows.
+- **Enterprise Architecture**:
+  - Multi-tier banking RAG powered by Groq Qwen 3.6-27B reasoning, ChromaDB vector store, OWASP Top 10 injection defenses, and MySQL 8.0 audit logging.
+  - End-to-end consulting deliverables: Discovery, Data Inventory, 4-tier Governance taxonomy, Risk Assessment, SOW, ROI Analysis ($1.08M annual savings, 332% ROI), and UAT Runbook.
+- **Business Impact**: $1.08M projected annual savings, 2.8 month payback period, 100% PII masking compliance, and 15/15 automated pytest test suite coverage.
 
 ### 6. 📈 Experience Timeline
 - Chronological engineering trajectory detailing DevOps & MLOps engineering work at **EXL Service** (Noida, India).
@@ -131,7 +137,8 @@ New-portfolio/
 │       └── escbash-*.png            # Verification certificate previews
 ├── projects/
 │   ├── chat-interface.png           # MedAssist AI FDE RAG clinical UI preview
-│   └── Retails.png                  # RetailMind operations chatbot UI preview
+│   ├── Retails.png                  # RetailMind operations chatbot UI preview
+│   └── bank.png                     # BankAssist AI enterprise banking knowledge portal
 ├── css/
 │   └── style.css                    # Design system, CSS variables & responsive queries
 ├── js/

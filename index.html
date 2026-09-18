@@ -844,9 +844,9 @@
 
         <div class="row g-4" id="projectGrid">
           <!-- Project 1: MedAssist AI FDE RAG -->
-          <div class="col-12 col-md-6 project-item-col" data-category="ai-agent vision-data full-stack">
+          <div class="col-12 col-md-6 col-lg-4 project-item-col" data-category="ai-agent vision-data full-stack">
             <div class="project-card shadow-sm h-100">
-              <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 250px;">
+              <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 220px;">
                 <img src="projects/chat-interface.png" alt="MedAssist AI FDE RAG Clinical Interface Preview" class="project-img w-100 h-100" style="object-fit: cover; object-position: top center;"
                   loading="lazy">
                 <div class="project-overlay">
@@ -857,9 +857,9 @@
               </div>
               <div class="project-content p-3 p-lg-4 d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
-                  <div class="project-category-tag"><i class="bi bi-hospital text-danger"></i> Clinical AI FDE Deployment</div>
+                  <div class="project-category-tag"><i class="bi bi-hospital text-danger"></i> Clinical AI FDE</div>
                   <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 font-mono small">
-                    <i class="bi bi-shield-check"></i> 100% Grounded Citations
+                    <i class="bi bi-shield-check"></i> 100% Citations
                   </span>
                 </div>
                 <h3 class="project-title fs-5 mb-2">MedAssist AI FDE RAG</h3>
@@ -867,10 +867,10 @@
                 <!-- AI FDE Value Narrative -->
                 <div class="mb-3 small text-secondary flex-grow-1">
                   <p class="mb-2">
-                    <strong class="text-white-subtle">FDE Engagement:</strong> Forward deployed into healthcare networks to tackle clinician lookup friction (1.5–2 hrs/day) and eliminate malpractice liability from generative AI hallucinations in high-acuity clinical workflows.
+                    <strong class="text-white-subtle">FDE Engagement:</strong> Forward deployed into healthcare networks to tackle clinician lookup friction (1.5–2 hrs/day) and eliminate malpractice liability from generative model hallucinations.
                   </p>
                   <p class="mb-0">
-                    <strong class="text-white-subtle">Technical Architecture:</strong> Engineered a deterministic <strong>Two-Stage Retrieval</strong> pipeline (ChromaDB vector pre-filter + BGE Cross-Encoder reranker) with retrieval-level RBAC tenant isolation and sub-1.8s Groq LLaMA 3.3 inference.
+                    <strong class="text-white-subtle">Technical Architecture:</strong> Deterministic <strong>Two-Stage Retrieval</strong> (ChromaDB vector pre-filter + BGE Cross-Encoder reranker) with retrieval-level RBAC tenant isolation and sub-1.8s Groq LLaMA 3.3 SLA.
                   </p>
                 </div>
 
@@ -900,9 +900,9 @@
           </div>
 
           <!-- Project 2: RetailMind AI FDE RAG -->
-          <div class="col-12 col-md-6 project-item-col" data-category="ai-agent full-stack">
+          <div class="col-12 col-md-6 col-lg-4 project-item-col" data-category="ai-agent full-stack">
             <div class="project-card shadow-sm h-100">
-              <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 250px;">
+              <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 220px;">
                 <img src="projects/Retails.png" alt="RetailMind Operations RAG Chatbot Preview" class="project-img w-100 h-100" style="object-fit: cover; object-position: top center;"
                   loading="lazy">
                 <div class="project-overlay">
@@ -913,7 +913,7 @@
               </div>
               <div class="project-content p-3 p-lg-4 d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
-                  <div class="project-category-tag"><i class="bi bi-shop text-primary"></i> Retail Operations FDE Deployment</div>
+                  <div class="project-category-tag"><i class="bi bi-shop text-primary"></i> Retail Operations FDE</div>
                   <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1 font-mono small">
                     <i class="bi bi-shield-lock-fill"></i> Prompt Guard 22M
                   </span>
@@ -923,10 +923,10 @@
                 <!-- AI FDE Value Narrative -->
                 <div class="mb-3 small text-secondary flex-grow-1">
                   <p class="mb-2">
-                    <strong class="text-white-subtle">FDE Engagement:</strong> Forward deployed across retail store operations to eliminate floor staff lookup latency, automate multi-format SOP ingestion, and secure public associate portals against prompt injection exploits.
+                    <strong class="text-white-subtle">FDE Engagement:</strong> Forward deployed across retail operations to eliminate floor staff lookup latency, automate multi-format SOP ingestion, and secure associate portals against injection exploits.
                   </p>
                   <p class="mb-0">
-                    <strong class="text-white-subtle">Technical Architecture:</strong> Designed a production <strong>Hybrid Retrieval</strong> system (ChromaDB dense search + BM25 keyword RRF), Cross-Encoder candidate re-ranking, Redis TTL query cache, and Groq LLaMA Prompt Guard 22M.
+                    <strong class="text-white-subtle">Technical Architecture:</strong> Production <strong>Hybrid Retrieval</strong> (ChromaDB dense search + BM25 keyword RRF), Cross-Encoder re-ranking, Redis TTL query cache, and Groq LLaMA Prompt Guard 22M.
                   </p>
                 </div>
 
@@ -947,6 +947,61 @@
                   </a>
                   <a href="https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot#readme" target="_blank" rel="noopener noreferrer"
                     class="project-link text-cyan fw-semibold small" aria-label="RetailMind System Documentation">
+                    FDE System Design <i class="bi bi-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: BankAssist AI FDE RAG -->
+          <div class="col-12 col-md-6 col-lg-4 project-item-col" data-category="ai-agent full-stack vision-data">
+            <div class="project-card shadow-sm h-100">
+              <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 220px;">
+                <img src="projects/bank.png" alt="BankAssist AI Enterprise Banking Knowledge Platform" class="project-img w-100 h-100" style="object-fit: cover; object-position: top center;"
+                  loading="lazy">
+                <div class="project-overlay">
+                  <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="bankassist">
+                    <i class="bi bi-eye-fill"></i> Architecture Preview
+                  </button>
+                </div>
+              </div>
+              <div class="project-content p-3 p-lg-4 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                  <div class="project-category-tag"><i class="bi bi-bank2 text-warning"></i> Banking & FinTech FDE</div>
+                  <span class="badge bg-warning-subtle text-warning border border-warning-subtle px-2 py-1 font-mono small">
+                    <i class="bi bi-lock-fill"></i> Zero-Trust PII
+                  </span>
+                </div>
+                <h3 class="project-title fs-5 mb-2">BankAssist AI FDE RAG</h3>
+                
+                <!-- AI FDE Value Narrative -->
+                <div class="mb-3 small text-secondary flex-grow-1">
+                  <p class="mb-2">
+                    <strong class="text-white-subtle">FDE Engagement:</strong> Forward deployed into enterprise banking institutions to streamline loan underwriting, KYC/AML directives, and enforce Zero-Trust PII masking (PAN, Aadhaar, Cards) across financial workflows.
+                  </p>
+                  <p class="mb-0">
+                    <strong class="text-white-subtle">Technical Architecture:</strong> Multi-tier banking RAG powered by Groq Qwen 3.6-27B reasoning, ChromaDB vector store, OWASP Top 10 injection defense, MySQL audit logging, and 8 FDE consulting deliverables ($1.08M ROI).
+                  </p>
+                </div>
+
+                <div class="project-tags mb-3">
+                  <span class="project-tag"><i class="bi bi-cash-stack text-success"></i> $1.08M ROI</span>
+                  <span class="project-tag"><i class="bi bi-cpu-fill text-info"></i> Qwen 3.6-27B</span>
+                  <span class="project-tag">FastAPI</span>
+                  <span class="project-tag">ChromaDB</span>
+                  <span class="project-tag">MySQL 8.0</span>
+                  <span class="project-tag">PII Masking</span>
+                  <span class="project-tag">Pytest (15/15)</span>
+                  <span class="project-tag">Docker Compose</span>
+                </div>
+                <div class="project-footer pt-3 border-top mt-auto" style="border-color: var(--border-color)!important;">
+                  <a href="https://github.com/bittush8789/enterprise-banking-fde-rag" target="_blank" rel="noopener noreferrer"
+                    class="project-link fw-semibold small" aria-label="BankAssist GitHub Repo">
+                    <i class="bi bi-github"></i> Repository
+                  </a>
+                  <a href="https://github.com/bittush8789/enterprise-banking-fde-rag#readme" target="_blank" rel="noopener noreferrer"
+                    class="project-link text-cyan fw-semibold small" aria-label="BankAssist System Documentation">
                     FDE System Design <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </div>

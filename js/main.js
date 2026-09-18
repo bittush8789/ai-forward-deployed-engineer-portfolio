@@ -168,6 +168,21 @@ const projectData = {
     tech: ['FastAPI', 'Python 3.11', 'LangChain 0.3', 'Groq LLaMA 3.3 70B', 'ChromaDB', 'Redis 7.2', 'Prompt Guard 22M', 'Docker Compose'],
     github: 'https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot',
     demo: 'https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot#readme'
+  },
+  'bankassist': {
+    title: 'BankAssist AI: Enterprise RAG Banking Knowledge Platform',
+    category: 'Banking & Financial Services | AI Forward Deployed Engineering',
+    image: 'projects/bank.png',
+    description: 'Forward deployed into enterprise banking institutions to eliminate loan underwriting friction and regulatory compliance lookup delays. Built with a Zero-Trust security posture enforcing automated PII masking (PAN, Aadhaar, credit cards, bank accounts), OWASP Top 10 prompt guardrails, and deterministic clause citations derived from 13 approved banking manuals.',
+    architecture: 'Engineered a multi-tier banking RAG architecture: Recursive character chunking (1000/200 overlap), BGE Small vector embeddings, dockerized ChromaDB vector retriever (0.15 cosine threshold), Groq Qwen 3.6-27B reasoning with thinking-tag parsers, and MySQL 8.0 security audit trail streaming. Backed by 8 complete FDE consulting lifecycle deliverables ($1.08M annual ROI, 332% ROI, 2.8 mo payback) and 15/15 automated pytest coverage.',
+    metrics: [
+      { label: 'Financial ROI', val: '$1.08M / yr' },
+      { label: 'Security Guard', val: 'Zero-Trust PII' },
+      { label: 'Test Coverage', val: '15/15 Pytest' }
+    ],
+    tech: ['FastAPI 0.109', 'Python 3.11', 'Groq Qwen 3.6-27B', 'ChromaDB Docker', 'MySQL 8.0', 'Presidio PII', 'Docker Compose', 'Pytest (100%)'],
+    github: 'https://github.com/bittush8789/enterprise-banking-fde-rag',
+    demo: 'https://github.com/bittush8789/enterprise-banking-fde-rag#readme'
   }
 };
 
