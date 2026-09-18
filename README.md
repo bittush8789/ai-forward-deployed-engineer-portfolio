@@ -1,6 +1,5 @@
 # ⚡ Bittu Kumar — Forward Deployed Engineer (FDE) Portfolio
 
-[![CI/CD Pipeline](https://github.com/bittush8789/ai-forward-deployed-engineer-portfolio/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/bittush8789/ai-forward-deployed-engineer-portfolio/actions/workflows/ci-cd.yml)
 [![Live Demo](https://img.shields.io/badge/Live-Demo-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://bittush8789.github.io/ai-forward-deployed-engineer-portfolio/)
 [![Tech Stack](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20JS%20%7C%20Bootstrap%205-7c3aed?style=for-the-badge)](https://getbootstrap.com/)
 [![Responsive](https://img.shields.io/badge/Responsive-Desktop%20%7C%20Laptop%20%7C%20Tablet%20%7C%20Mobile-06b6d4?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
@@ -112,9 +111,6 @@ The portfolio includes media queries covering all device categories:
 
 ```text
 New-portfolio/
-├── .github/
-│   └── workflows/
-│       └── ci-cd.yml                # Automated CI validation & GitHub Pages CD pipeline
 ├── assets/
 │   ├── favicon.svg                  # Vector browser favicon
 │   └── images/
@@ -127,7 +123,6 @@ New-portfolio/
 ├── js/
 │   └── main.js                      # Theme toggle, typewriter, filter, modals & form logic
 ├── .gitignore                       # Ignored OS & editor artifacts
-├── .htmlhintrc                      # HTML validation & standards config
 ├── index.html                       # Semantic HTML5 single-page application
 └── README.md                        # Documentation & setup guide
 ```
@@ -158,32 +153,18 @@ You can directly open `index.html` in Google Chrome, Microsoft Edge, Firefox, or
 
 ---
 
-## 🚢 CI/CD & Deployment Guide
+## 🚢 Deployment Guide
 
-### Automated CI/CD via GitHub Actions (Recommended)
-
-This repository includes a fully automated **Continuous Integration & Continuous Deployment (CI/CD)** pipeline powered by GitHub Actions:
-
-- **CI (Pull Requests & Pushes)**:
-  - Validates JavaScript syntax (`node --check js/main.js`).
-  - Lints and validates HTML5 semantic structure with HTMLHint (`.htmlhintrc`).
-  - Verifies asset integrity and checks for missing media files.
-- **CD (Deploy to GitHub Pages on `main`)**:
-  - Automatically builds and deploys the site to **GitHub Pages** using native GitHub Pages Actions (`actions/deploy-pages@v4`).
-
-#### One-Time Setup in GitHub Repository:
-1. Push your repository to GitHub:
+### Deploying to GitHub Pages
+1. Push this repository to GitHub:
    ```bash
-   git init
    git add .
-   git commit -m "feat: setup portfolio with automated CI/CD pipeline"
-   git branch -M main
-   git remote add origin https://github.com/bittush8789/ai-forward-deployed-engineer-portfolio.git
-   git push -u origin main
+   git commit -m "feat: portfolio updates"
+   git push origin main
    ```
-2. Navigate to your repository on GitHub: **Settings ➔ Pages**.
-3. Under **Build and deployment ➔ Source**, select **`GitHub Actions`** (instead of *Deploy from a branch*).
-4. That's it! Every future push to `main` will automatically trigger the CI quality gate and deploy your latest portfolio to `https://bittush8789.github.io/ai-forward-deployed-engineer-portfolio/`.
+2. Go to **Settings ➔ Pages** on your GitHub repository.
+3. Under **Branch**, select `main` and `/ (root)`.
+4. Click **Save**. Your site will be live at `https://bittush8789.github.io/ai-forward-deployed-engineer-portfolio/`.
 
 ### Deploying to Vercel
 ```bash
