@@ -139,95 +139,20 @@ function initProjectFilters() {
    4. Project Detail Modal Data & Triggers
    ========================================================================== */
 const projectData = {
-  'omniagent': {
-    title: 'OmniAgent Studio: Autonomous Multi-Agent Orchestrator',
-    category: 'AI Agents & LLMs',
-    image: 'assets/images/project-agent.jpg',
-    description: 'A cutting-edge platform for orchestrating distributed LLM agents with multi-step reasoning, tool invocation, graph-based routing, and human-in-the-loop intervention safeguards.',
-    architecture: 'Built on FastAPI async backend, Python LangGraph, Next.js 14 frontend, WebSocket live event streaming, and Qdrant vector memory storage.',
+  'medassist': {
+    title: 'MedAssist AI FDE RAG: Clinical Knowledge & Two-Stage RAG Platform',
+    category: 'Enterprise AI / Clinical RAG & LLMOps',
+    image: 'projects/chat-interface.png',
+    description: 'Production-grade clinical decision support platform enforcing Two-Stage Retrieval (ChromaDB + BGE Cross-Encoder), tenant-isolated vector pre-filtering, and ultra-low latency Groq LLaMA 3.3 inference (<1.8s SLA) with 100% verifiable citations.',
+    architecture: 'FastAPI async backend, LangChain RAG orchestrator, ChromaDB vector store with tenant pre-filtering, BGE Reranker Base cross-encoder, Groq LPU inference, and JWT Role-Based Access Control.',
     metrics: [
-      { label: 'Inference Latency', val: '32ms (Streaming)' },
-      { label: 'Agent Concurrency', val: '10,000+ Tasks' },
-      { label: 'Tool Success Rate', val: '99.1%' }
+      { label: 'End-to-End SLA', val: '< 1.8s' },
+      { label: 'Grounding Rate', val: '100%' },
+      { label: 'Knowledge Base', val: '25 Guidelines' }
     ],
-    tech: ['Python', 'FastAPI', 'LangGraph', 'TypeScript', 'Next.js', 'WebSockets', 'Qdrant', 'Docker'],
-    github: 'https://github.com/bittu-kumar/omniagent-studio',
-    demo: 'https://omniagent-studio.dev'
-  },
-  'rag-engine': {
-    title: 'Enterprise RAG Engine & Vector Search Pipeline',
-    category: 'AI / Vector Search',
-    image: 'assets/images/project-rag.jpg',
-    description: 'Scalable hybrid retrieval system supporting dense and sparse retrieval (BM25 + ColBERT / e5-mistral), dynamic reranking, automated chunking, and document lineage tracking.',
-    architecture: 'High-throughput document ingestion workers powered by Celery + Redis, FAISS & Qdrant cluster, FastAPI semantic search endpoints, and React analytics telemetry dashboard.',
-    metrics: [
-      { label: 'Mean Search Latency', val: '2.1ms' },
-      { label: 'Indexed Docs', val: '1.2 Million' },
-      { label: 'Retrieval Accuracy', val: '98.4%' }
-    ],
-    tech: ['Python', 'PyTorch', 'Qdrant', 'FastAPI', 'Redis', 'Docker', 'React', 'Tailwind'],
-    github: 'https://github.com/bittu-kumar/enterprise-rag-engine',
-    demo: 'https://rag-engine.demo.io'
-  },
-  'visionpulse': {
-    title: 'VisionPulse AI: Clinical Radiology Diagnostics Platform',
-    category: 'Computer Vision & AI',
-    image: 'assets/images/project-vision.jpg',
-    description: 'Real-time computer vision system for pulmonary nodule segmentation and automated radiological triage using deep convolutional networks and vision transformers.',
-    architecture: 'Trained with PyTorch, exported to TensorRT for low-latency GPU inference, served with Triton Inference Server, and visualized in a DICOM-compliant WebGL interface.',
-    metrics: [
-      { label: 'Diagnostic AUC-ROC', val: '0.986' },
-      { label: 'Inference Speed', val: '14ms / Scan' },
-      { label: 'Segmentation Score', val: '91.4% Dice' }
-    ],
-    tech: ['PyTorch', 'TensorRT', 'Triton Server', 'FastAPI', 'WebGL', 'Three.js', 'Docker'],
-    github: 'https://github.com/bittu-kumar/visionpulse-radiology',
-    demo: 'https://visionpulse.health.io'
-  },
-  'neuralsaas': {
-    title: 'NeuralSaaS: LLM Observability & Token Analytics',
-    category: 'Full-Stack Web & Cloud',
-    image: 'assets/images/project-analytics.jpg',
-    description: 'Enterprise observability dashboard monitoring LLM latency waterfalls, token consumption costs, prompt cache hit rates, and model hallucination rates across multi-tenant deployments.',
-    architecture: 'Full-stack application powered by Next.js 14, Go microservices, ClickHouse time-series data warehouse, Kafka streaming ingestion, and PostgreSQL.',
-    metrics: [
-      { label: 'Processed Queries', val: '28.4K / hr' },
-      { label: 'Cache Hit Rate', val: '64.8%' },
-      { label: 'Cost Reduction', val: '38% Avg' }
-    ],
-    tech: ['Next.js', 'Go', 'ClickHouse', 'PostgreSQL', 'Kafka', 'Chart.js', 'AWS ECS'],
-    github: 'https://github.com/bittu-kumar/neuralsaas-analytics',
-    demo: 'https://neuralsaas.cloud'
-  },
-  'voiceflow': {
-    title: 'VoiceFlow Copilot: Conversational Voice AI',
-    category: 'AI Audio & Real-Time',
-    image: 'assets/images/project-voice.jpg',
-    description: 'Ultra-low latency duplex voice conversation agent incorporating streaming Whisper ASR, semantic intent detection, and neural TTS synthesis with sub-second roundtrip latency.',
-    architecture: 'Bi-directional WebRTC / WebSockets audio pipe connected to Python vLLM & XTTS model instances with audio packet buffering and jitter compensation.',
-    metrics: [
-      { label: 'Voice RTT Latency', val: '802ms (<1s)' },
-      { label: 'ASR Accuracy', val: '98.2% WER' },
-      { label: 'Simultaneous Streams', val: '500+ calls' }
-    ],
-    tech: ['Python', 'WebRTC', 'Whisper ASR', 'FastAPI', 'Node.js', 'Docker', 'WebSockets'],
-    github: 'https://github.com/bittu-kumar/voiceflow-copilot',
-    demo: 'https://voiceflow.ai-demo.live'
-  },
-  'synthetix': {
-    title: 'Synthetix Data: SLM Fine-Tuning & Evaluation',
-    category: 'AI / Data Science',
-    image: 'assets/images/project-synth.jpg',
-    description: 'Automated synthetic dataset curation and LoRA fine-tuning pipeline for Small Language Models (Llama 3.2, Gemma 2, Phi-3) with automated benchmark evaluation.',
-    architecture: 'Ray distributed cluster for parallel LLM prompt synthesis, HuggingFace TRL / Peft library for quantization, and interactive visualization dashboard.',
-    metrics: [
-      { label: 'Dataset Yield', val: '500k high-quality pairs' },
-      { label: 'Model MMLU Gain', val: '+7.4 pts' },
-      { label: 'Training Cost', val: '4x Lower vs Base' }
-    ],
-    tech: ['Python', 'PyTorch', 'HuggingFace', 'Ray Cluster', 'Streamlit', 'Docker', 'GCP'],
-    github: 'https://github.com/bittu-kumar/synthetix-data-engine',
-    demo: 'https://synthetix-engine.org'
+    tech: ['FastAPI', 'Python 3.11', 'LangChain', 'Groq LLaMA 3.3', 'ChromaDB', 'BGE Cross-Encoder', 'Docker', 'JWT RBAC', 'Pytest'],
+    github: 'https://github.com/bittush8789/medassist-ai-fde-rag',
+    demo: 'https://github.com/bittush8789/medassist-ai-fde-rag#readme'
   }
 };
 

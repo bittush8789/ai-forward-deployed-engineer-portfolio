@@ -843,234 +843,48 @@
         </div>
 
         <div class="row g-4" id="projectGrid">
-          <!-- Project 1: OmniAgent Studio -->
-          <div class="col-md-6 col-lg-4 project-item-col" data-category="ai-agent full-stack">
-            <div class="project-card">
-              <div class="project-img-wrapper">
-                <img src="assets/images/project-agent.jpg" alt="OmniAgent Studio Project Preview" class="project-img"
+          <!-- Featured Flagship Project: MedAssist AI FDE RAG -->
+          <div class="col-12 col-lg-9 mx-auto project-item-col" data-category="ai-agent full-stack vision-data">
+            <div class="project-card shadow-lg">
+              <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 460px;">
+                <img src="projects/chat-interface.png" alt="MedAssist AI FDE RAG Clinical Interface Preview" class="project-img w-100 h-100" style="object-fit: cover; object-position: top center;"
                   loading="lazy">
                 <div class="project-overlay">
-                  <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="omniagent">
+                  <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="medassist">
                     <i class="bi bi-eye-fill"></i> Architecture Preview
                   </button>
                 </div>
               </div>
-              <div class="project-content">
-                <div class="project-category-tag">AI Multi-Agent System</div>
-                <h3 class="project-title">OmniAgent Studio</h3>
-                <p class="project-description">
-                  Autonomous workflow orchestrator enabling collaborative LLM agent teams with multi-step reasoning,
-                  dynamic tool usage, and real-time execution graphs.
+              <div class="project-content p-4">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                  <div class="project-category-tag">Two-Stage RAG & Clinical Intelligence</div>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-1 font-mono small">
+                    <i class="bi bi-shield-check"></i> 100% Grounded Citations
+                  </span>
+                </div>
+                <h3 class="project-title fs-4 mb-2">MedAssist AI FDE RAG</h3>
+                <p class="project-description mb-3">
+                  Enterprise-grade clinical decision support and hospital protocol assistant enforcing <strong>Two-Stage Retrieval</strong> (ChromaDB vector pre-filter + BGE Cross-Encoder reranker), multi-tenant document isolation, and sub-1.8s Groq LLaMA 3.3 inference with deterministic zero-hallucination guardrails and verified page citations.
                 </p>
-                <div class="project-tags">
-                  <span class="project-tag">LangGraph</span>
+                <div class="project-tags mb-3">
+                  <span class="project-tag"><i class="bi bi-lightning-charge-fill text-warning"></i> Sub-1.8s SLA</span>
                   <span class="project-tag">FastAPI</span>
-                  <span class="project-tag">Next.js 14</span>
-                  <span class="project-tag">Qdrant</span>
-                </div>
-                <div class="project-footer">
-                  <a href="https://github.com/bittu-kumar/omniagent-studio" target="_blank" rel="noopener noreferrer"
-                    class="project-link" aria-label="OmniAgent GitHub Repo">
-                    <i class="bi bi-github"></i> Code
-                  </a>
-                  <a href="https://omniagent-studio.dev" target="_blank" rel="noopener noreferrer"
-                    class="project-link text-cyan" aria-label="OmniAgent Live Demo">
-                    Live Demo <i class="bi bi-arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2: Enterprise RAG Engine -->
-          <div class="col-md-6 col-lg-4 project-item-col" data-category="ai-agent vision-data">
-            <div class="project-card">
-              <div class="project-img-wrapper">
-                <img src="assets/images/project-rag.jpg" alt="Enterprise RAG Engine Project Preview" class="project-img"
-                  loading="lazy">
-                <div class="project-overlay">
-                  <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="rag-engine">
-                    <i class="bi bi-eye-fill"></i> Architecture Preview
-                  </button>
-                </div>
-              </div>
-              <div class="project-content">
-                <div class="project-category-tag">Vector Search & RAG</div>
-                <h3 class="project-title">Enterprise RAG Engine</h3>
-                <p class="project-description">
-                  Hybrid semantic search pipeline combining dense vector embeddings with BM25 lexical search, ColBERT
-                  reranking, and 2.1ms search response time.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">PyTorch</span>
-                  <span class="project-tag">Qdrant</span>
-                  <span class="project-tag">Redis</span>
-                  <span class="project-tag">FastAPI</span>
-                </div>
-                <div class="project-footer">
-                  <a href="https://github.com/bittu-kumar/enterprise-rag-engine" target="_blank"
-                    rel="noopener noreferrer" class="project-link" aria-label="RAG Engine GitHub Repo">
-                    <i class="bi bi-github"></i> Code
-                  </a>
-                  <a href="https://rag-engine.demo.io" target="_blank" rel="noopener noreferrer"
-                    class="project-link text-cyan" aria-label="RAG Engine Live Demo">
-                    Live Demo <i class="bi bi-arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: VisionPulse AI -->
-          <div class="col-md-6 col-lg-4 project-item-col" data-category="vision-data full-stack">
-            <div class="project-card">
-              <div class="project-img-wrapper">
-                <img src="assets/images/project-vision.jpg" alt="VisionPulse AI Radiology Preview" class="project-img"
-                  loading="lazy">
-                <div class="project-overlay">
-                  <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="visionpulse">
-                    <i class="bi bi-eye-fill"></i> Architecture Preview
-                  </button>
-                </div>
-              </div>
-              <div class="project-content">
-                <div class="project-category-tag">Computer Vision & Health</div>
-                <h3 class="project-title">VisionPulse Diagnostics</h3>
-                <p class="project-description">
-                  Sub-second CT Thorax radiological segmentation platform delivering 98.6% diagnostic AUC-ROC with
-                  interactive WebGL volumetric masks.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">PyTorch</span>
-                  <span class="project-tag">TensorRT</span>
-                  <span class="project-tag">WebGL</span>
+                  <span class="project-tag">LangChain</span>
+                  <span class="project-tag">ChromaDB</span>
+                  <span class="project-tag">Groq LLaMA 3.3</span>
+                  <span class="project-tag">BGE Reranker</span>
                   <span class="project-tag">Docker</span>
+                  <span class="project-tag">JWT RBAC</span>
+                  <span class="project-tag">Pytest (13/13 Passed)</span>
                 </div>
-                <div class="project-footer">
-                  <a href="https://github.com/bittu-kumar/visionpulse-radiology" target="_blank"
-                    rel="noopener noreferrer" class="project-link" aria-label="VisionPulse GitHub Repo">
-                    <i class="bi bi-github"></i> Code
+                <div class="project-footer pt-3 border-top" style="border-color: var(--border-color)!important;">
+                  <a href="https://github.com/bittush8789/medassist-ai-fde-rag" target="_blank" rel="noopener noreferrer"
+                    class="project-link fw-semibold" aria-label="MedAssist GitHub Repo">
+                    <i class="bi bi-github"></i> View GitHub Repository
                   </a>
-                  <a href="https://visionpulse.health.io" target="_blank" rel="noopener noreferrer"
-                    class="project-link text-cyan" aria-label="VisionPulse Live Demo">
-                    Live Demo <i class="bi bi-arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4: NeuralSaaS Analytics -->
-          <div class="col-md-6 col-lg-4 project-item-col" data-category="full-stack">
-            <div class="project-card">
-              <div class="project-img-wrapper">
-                <img src="assets/images/project-analytics.jpg" alt="NeuralSaaS Analytics Preview" class="project-img"
-                  loading="lazy">
-                <div class="project-overlay">
-                  <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="neuralsaas">
-                    <i class="bi bi-eye-fill"></i> Architecture Preview
-                  </button>
-                </div>
-              </div>
-              <div class="project-content">
-                <div class="project-category-tag">Cloud & Observability</div>
-                <h3 class="project-title">NeuralSaaS Telemetry</h3>
-                <p class="project-description">
-                  Enterprise LLM cost observatory and latency waterfall debugger with prompt cache hit rate tracking,
-                  reducing inference expenses by 38%.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">Next.js 14</span>
-                  <span class="project-tag">Go</span>
-                  <span class="project-tag">ClickHouse</span>
-                  <span class="project-tag">Kafka</span>
-                </div>
-                <div class="project-footer">
-                  <a href="https://github.com/bittu-kumar/neuralsaas-analytics" target="_blank"
-                    rel="noopener noreferrer" class="project-link" aria-label="NeuralSaaS GitHub Repo">
-                    <i class="bi bi-github"></i> Code
-                  </a>
-                  <a href="https://neuralsaas.cloud" target="_blank" rel="noopener noreferrer"
-                    class="project-link text-cyan" aria-label="NeuralSaaS Live Demo">
-                    Live Demo <i class="bi bi-arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5: VoiceFlow Copilot -->
-          <div class="col-md-6 col-lg-4 project-item-col" data-category="ai-agent full-stack">
-            <div class="project-card">
-              <div class="project-img-wrapper">
-                <img src="assets/images/project-voice.jpg" alt="VoiceFlow Copilot Project Preview" class="project-img"
-                  loading="lazy">
-                <div class="project-overlay">
-                  <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="voiceflow">
-                    <i class="bi bi-eye-fill"></i> Architecture Preview
-                  </button>
-                </div>
-              </div>
-              <div class="project-content">
-                <div class="project-category-tag">Audio & Conversational AI</div>
-                <h3 class="project-title">VoiceFlow Copilot</h3>
-                <p class="project-description">
-                  Bi-directional voice conversation engine operating with 802ms round-trip latency, utilizing streaming
-                  Whisper ASR and neural speech synthesis.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">WebRTC</span>
-                  <span class="project-tag">Whisper</span>
-                  <span class="project-tag">FastAPI</span>
-                  <span class="project-tag">WebSockets</span>
-                </div>
-                <div class="project-footer">
-                  <a href="https://github.com/bittu-kumar/voiceflow-copilot" target="_blank" rel="noopener noreferrer"
-                    class="project-link" aria-label="VoiceFlow GitHub Repo">
-                    <i class="bi bi-github"></i> Code
-                  </a>
-                  <a href="https://voiceflow.ai-demo.live" target="_blank" rel="noopener noreferrer"
-                    class="project-link text-cyan" aria-label="VoiceFlow Live Demo">
-                    Live Demo <i class="bi bi-arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6: Synthetix Data Engine -->
-          <div class="col-md-6 col-lg-4 project-item-col" data-category="vision-data">
-            <div class="project-card">
-              <div class="project-img-wrapper">
-                <img src="assets/images/project-synth.jpg" alt="Synthetix Data Engine Project Preview"
-                  class="project-img" loading="lazy">
-                <div class="project-overlay">
-                  <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="synthetix">
-                    <i class="bi bi-eye-fill"></i> Architecture Preview
-                  </button>
-                </div>
-              </div>
-              <div class="project-content">
-                <div class="project-category-tag">Synthetic Data & LoRA</div>
-                <h3 class="project-title">Synthetix Data Engine</h3>
-                <p class="project-description">
-                  Automated synthetic instruction-tuning dataset pipeline and LoRA fine-tuning bench for small language
-                  models, achieving +7.4 MMLU gains.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">PyTorch</span>
-                  <span class="project-tag">Ray Cluster</span>
-                  <span class="project-tag">HuggingFace</span>
-                  <span class="project-tag">GCP</span>
-                </div>
-                <div class="project-footer">
-                  <a href="https://github.com/bittu-kumar/synthetix-data-engine" target="_blank"
-                    rel="noopener noreferrer" class="project-link" aria-label="Synthetix GitHub Repo">
-                    <i class="bi bi-github"></i> Code
-                  </a>
-                  <a href="https://synthetix-engine.org" target="_blank" rel="noopener noreferrer"
-                    class="project-link text-cyan" aria-label="Synthetix Live Demo">
-                    Live Demo <i class="bi bi-arrow-up-right"></i>
+                  <a href="https://github.com/bittush8789/medassist-ai-fde-rag#readme" target="_blank" rel="noopener noreferrer"
+                    class="project-link text-cyan fw-semibold" aria-label="MedAssist System Documentation">
+                    System Architecture & Demo <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </div>
               </div>

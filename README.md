@@ -68,12 +68,11 @@ A modern, high-performance, and fully responsive personal portfolio for **Bittu 
   5. **Cloud, DevOps & Observability**: AWS (EC2/S3/ECR/IAM/VPC/CloudWatch), Kubernetes, Docker, Terraform, Ansible, Jenkins, Prometheus, Grafana, ELK Stack.
 
 ### 5. 💼 Featured Production Projects
-- Interactive category filter tabs:
-  - `All Projects`
-  - `AI Agents & LLMs`
-  - `Full-Stack Web`
-  - `Vision & Data`
-- Interactive cards with 16:9 media previews, tags, source code links, live demo links, and rich architecture preview modals.
+- **Flagship Project**: **MedAssist AI FDE RAG** ([GitHub Repository](https://github.com/bittush8789/medassist-ai-fde-rag))
+  - Two-Stage Retrieval architecture (ChromaDB vector pre-filter + BGE Cross-Encoder re-ranker).
+  - High-acuity clinical intelligence assistant with multi-tenant document isolation and zero-leakage RBAC.
+  - Sub-1.8s Groq LLaMA 3.3 inference SLA with 100% grounded citations and verified page references.
+- Interactive card with high-resolution UI preview (`projects/chat-interface.png`), source code repository links, system design documentation, and deep architecture preview modal.
 
 ### 6. 📈 Experience Timeline
 - Chronological engineering trajectory detailing DevOps & MLOps engineering work at **EXL Service** (Noida, India).
@@ -116,8 +115,9 @@ New-portfolio/
 │   └── images/
 │       ├── profile.jpg              # Professional profile picture
 │       ├── FDE.png                  # Who is an AI FDE banner graphic
-│       ├── escbash-*.png            # Verification certificate previews
-│       └── project-*.jpg            # Production project preview cards
+│       └── escbash-*.png            # Verification certificate previews
+├── projects/
+│   └── chat-interface.png           # MedAssist AI FDE RAG clinical UI preview
 ├── css/
 │   └── style.css                    # Design system, CSS variables & responsive queries
 ├── js/
