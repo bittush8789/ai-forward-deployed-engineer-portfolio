@@ -1,0 +1,110 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # ----------------------------------------------------------------------
+  # Continuous Integration (CI): Code Quality, Syntax & Integrity Validation
+  # ----------------------------------------------------------------------
+  validate:
+    name: Code Quality & Integrity Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate JavaScript Syntax
+        run: |
+          echo "Checking JavaScript syntax..."
+          node --check js/main.js
+          echo "JavaScript syntax check passed."
+
+      - name: Validate HTML Structure & Standards
+        run: |
+          echo "Running HTMLHint validation..."
+          npx --yes htmlhint index.html --config .htmlhintrc
+          echo "HTML validation passed."
+
+      - name: Audit Critical Files & Assets
+        run: |
+          echo "Auditing core portfolio files..."
+          required_files=(
+            "index.html"
+            "css/style.css"
+            "js/main.js"
+            "assets/favicon.svg"
+            "assets/images/profile.jpg"
+            "assets/images/FDE.png"
+            ".htmlhintrc"
+            ".gitignore"
+          )
+
+          missing=0
+          for file in "${required_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "::error file=$file::Missing required asset/file: $file"
+              missing=$((missing + 1))
+            else
+              echo " Verified $file"
+            fi
+          done
+
+          if [ $missing -gt 0 ]; then
+            echo "Asset audit failed with $missing missing file(s)."
+            exit 1
+          fi
+          echo "All critical assets verified successfully."
+
+  # ----------------------------------------------------------------------
+  # Continuous Deployment (CD): Automated GitHub Pages Deployment
+  # ----------------------------------------------------------------------
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: validate
+    if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Artifact to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
