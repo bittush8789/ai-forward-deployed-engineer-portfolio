@@ -228,6 +228,21 @@ const projectData = {
     tech: ['FastAPI', 'Python 3.11', 'LangChain', 'Groq GPT-OSS-120B', 'ChromaDB Docker', 'MySQL 8.0', 'LangSmith', 'Docker Compose'],
     github: 'https://github.com/bittush8789/enterprise-travelassist-ai-fde-rag',
     demo: 'https://github.com/bittush8789/enterprise-travelassist-ai-fde-rag#readme'
+  },
+  'waterops': {
+    title: 'WaterOps AI: Multi-Department Water Utility Knowledge Assistant',
+    category: 'Critical Infrastructure & Water Utilities | AI Forward Deployed Engineering',
+    image: 'projects/waterops.png',
+    description: 'Forward deployed into municipal and industrial water utilities (UK water operations model: DWI, OFWAT, and EA compliance) to unify standard operating procedures across 13 siloed departments—including Leakage, Water Quality, Incident Management, Operations, and Billing—with zero-hallucination verification and safety-critical hazard alerts.',
+    architecture: 'Multi-department RAG architecture featuring granular Role-Based Access Control (Admin, Manager, Agent) and pre-retrieval ChromaDB metadata filtering (ensuring agents only retrieve from authorized, approved SOPs). Powered by Groq LPU inference (openai/gpt-oss-120b), prompt injection guardrails, safety-critical query detector (attaching immediate emergency protocols for contamination/bursts), and MySQL/SQLite relational audit logging with feedback persistence.',
+    metrics: [
+      { label: 'Scope', val: '13 Departments' },
+      { label: 'Security', val: 'RBAC + Safety Alert' },
+      { label: 'LLM Engine', val: 'Groq 120B LPU' }
+    ],
+    tech: ['FastAPI', 'Python 3.11', 'Groq GPT-OSS-120B', 'ChromaDB', 'SentenceTransformers', 'JWT RBAC', 'MySQL / SQLite', 'Docker'],
+    github: 'https://github.com/bittush8789/waterops-ai-fde-rag',
+    demo: 'https://github.com/bittush8789/waterops-ai-fde-rag#readme'
   }
 };
 

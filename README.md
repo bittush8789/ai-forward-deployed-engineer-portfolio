@@ -122,6 +122,17 @@ A modern, high-performance, and fully responsive personal portfolio for **Bittu 
   - MySQL 8.0 relational persistence with SQLAlchemy for session tracking, message audit logging, and thumbs-up/down user feedback collection.
 - **Business Impact**: < 1.5s response SLA, ~65% deflection of routine customer inquiries, 100% cited answers with source filenames and page numbers, and Docker Compose orchestration.
 
+#### 7. WaterOps AI FDE RAG — Multi-Department Water Utility Knowledge Assistant
+- **Repository**: [`bittush8789/waterops-ai-fde-rag`](https://github.com/bittush8789/waterops-ai-fde-rag)
+- **AI FDE Scope**: Forward deployed into municipal and industrial water utilities (UK water operations model: DWI, OFWAT, EA compliance) to unify standard operating procedures across 13 siloed departments (Leakage, Water Quality, Incident Management, Operations, Billing, etc.) under strict safety-critical query safeguards.
+- **Enterprise Architecture**:
+  - 13-Department Role-Based Access Control (Admin, Manager, Agent) with pre-retrieval ChromaDB metadata isolation (`status == "approved"`).
+  - Safety-critical query detector attaching urgent emergency protocols for contamination, severe bursts, flooding, and boil-water notices.
+  - Fast Groq LPU inference (`openai/gpt-oss-120b`) with strict anti-hallucination gatekeeper (0.35 cosine threshold + deterministic fallback).
+  - MySQL / SQLite relational persistence with comprehensive audit logging for user inquiries, document metadata, and feedback.
+- **Business Impact**: Instant SOP access across 13 departments, zero unauthorized cross-department retrieval leakage, immediate hazard mitigation alerts, and full Docker containerization.
+
+
 
 
 ### 6. 📈 Experience Timeline
@@ -172,7 +183,8 @@ New-portfolio/
 │   ├── bank.png                     # BankAssist AI enterprise banking knowledge portal
 │   ├── fintech.png                  # FinAssist GPT enterprise FinTech knowledge assistant
 │   ├── legal.png                    # LegalAssist AI legal document intelligence preview
-│   └── travel.png                   # TravelAssist AI customer support portal preview
+│   ├── travel.png                   # TravelAssist AI customer support portal preview
+│   └── waterops.png                 # WaterOps AI water utility intelligence platform preview
 ├── css/
 │   └── style.css                    # Design system, CSS variables & responsive queries
 ├── js/
