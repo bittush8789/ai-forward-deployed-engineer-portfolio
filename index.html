@@ -843,10 +843,10 @@
         </div>
 
         <div class="row g-4" id="projectGrid">
-          <!-- Featured Flagship Project: MedAssist AI FDE RAG -->
-          <div class="col-12 col-md-10 col-lg-6 mx-auto project-item-col" data-category="ai-agent full-stack vision-data" style="max-width: 680px;">
-            <div class="project-card shadow-sm">
-              <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 320px;">
+          <!-- Project 1: MedAssist AI FDE RAG -->
+          <div class="col-12 col-md-6 project-item-col" data-category="ai-agent vision-data full-stack">
+            <div class="project-card shadow-sm h-100">
+              <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 250px;">
                 <img src="projects/chat-interface.png" alt="MedAssist AI FDE RAG Clinical Interface Preview" class="project-img w-100 h-100" style="object-fit: cover; object-position: top center;"
                   loading="lazy">
                 <div class="project-overlay">
@@ -855,19 +855,19 @@
                   </button>
                 </div>
               </div>
-              <div class="project-content p-3 p-md-4">
+              <div class="project-content p-3 p-lg-4 d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
-                  <div class="project-category-tag">Two-Stage RAG & Clinical Intelligence</div>
-                  <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-1 font-mono small">
-                    <i class="bi bi-shield-check"></i> 100% Grounded Citations
+                  <div class="project-category-tag">Two-Stage RAG & Clinical AI</div>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 font-mono small">
+                    <i class="bi bi-shield-check"></i> 100% Citations
                   </span>
                 </div>
-                <h3 class="project-title fs-4 mb-2">MedAssist AI FDE RAG</h3>
-                <p class="project-description mb-3">
-                  Enterprise-grade clinical decision support and hospital protocol assistant enforcing <strong>Two-Stage Retrieval</strong> (ChromaDB vector pre-filter + BGE Cross-Encoder reranker), multi-tenant document isolation, and sub-1.8s Groq LLaMA 3.3 inference with deterministic zero-hallucination guardrails and verified page citations.
+                <h3 class="project-title fs-5 mb-2">MedAssist AI FDE RAG</h3>
+                <p class="project-description mb-3 small text-secondary flex-grow-1">
+                  Enterprise clinical intelligence platform enforcing <strong>Two-Stage Retrieval</strong> (ChromaDB + BGE Cross-Encoder), multi-tenant document isolation, and sub-1.8s Groq LLaMA 3.3 inference with zero-hallucination guardrails and verified citations.
                 </p>
                 <div class="project-tags mb-3">
-                  <span class="project-tag"><i class="bi bi-lightning-charge-fill text-warning"></i> Sub-1.8s SLA</span>
+                  <span class="project-tag"><i class="bi bi-lightning-charge-fill text-warning"></i> &lt;1.8s SLA</span>
                   <span class="project-tag">FastAPI</span>
                   <span class="project-tag">LangChain</span>
                   <span class="project-tag">ChromaDB</span>
@@ -875,16 +875,61 @@
                   <span class="project-tag">BGE Reranker</span>
                   <span class="project-tag">Docker</span>
                   <span class="project-tag">JWT RBAC</span>
-                  <span class="project-tag">Pytest (13/13 Passed)</span>
                 </div>
-                <div class="project-footer pt-3 border-top" style="border-color: var(--border-color)!important;">
+                <div class="project-footer pt-3 border-top mt-auto" style="border-color: var(--border-color)!important;">
                   <a href="https://github.com/bittush8789/medassist-ai-fde-rag" target="_blank" rel="noopener noreferrer"
-                    class="project-link fw-semibold" aria-label="MedAssist GitHub Repo">
-                    <i class="bi bi-github"></i> View GitHub Repository
+                    class="project-link fw-semibold small" aria-label="MedAssist GitHub Repo">
+                    <i class="bi bi-github"></i> Code
                   </a>
                   <a href="https://github.com/bittush8789/medassist-ai-fde-rag#readme" target="_blank" rel="noopener noreferrer"
-                    class="project-link text-cyan fw-semibold" aria-label="MedAssist System Documentation">
-                    System Architecture & Demo <i class="bi bi-arrow-up-right"></i>
+                    class="project-link text-cyan fw-semibold small" aria-label="MedAssist System Documentation">
+                    Architecture & Demo <i class="bi bi-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: RetailMind AI FDE RAG -->
+          <div class="col-12 col-md-6 project-item-col" data-category="ai-agent full-stack">
+            <div class="project-card shadow-sm h-100">
+              <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 250px;">
+                <img src="projects/Retails.png" alt="RetailMind Operations RAG Chatbot Preview" class="project-img w-100 h-100" style="object-fit: cover; object-position: top center;"
+                  loading="lazy">
+                <div class="project-overlay">
+                  <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="retailmind">
+                    <i class="bi bi-eye-fill"></i> Architecture Preview
+                  </button>
+                </div>
+              </div>
+              <div class="project-content p-3 p-lg-4 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                  <div class="project-category-tag">Enterprise AI & Retail Operations</div>
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1 font-mono small">
+                    <i class="bi bi-shield-lock-fill"></i> Prompt Guard 22M
+                  </span>
+                </div>
+                <h3 class="project-title fs-5 mb-2">RetailMind AI FDE RAG</h3>
+                <p class="project-description mb-3 small text-secondary flex-grow-1">
+                  Production-ready retail operations assistant indexing store SOPs, return policies, and catalogs with <strong>Hybrid Retrieval</strong> (ChromaDB dense search + BM25 keyword RRF), Redis query caching, and LLaMA Prompt Guard security.
+                </p>
+                <div class="project-tags mb-3">
+                  <span class="project-tag"><i class="bi bi-cpu-fill text-info"></i> LLaMA 3.3 70B</span>
+                  <span class="project-tag">FastAPI</span>
+                  <span class="project-tag">LangChain 0.3</span>
+                  <span class="project-tag">ChromaDB</span>
+                  <span class="project-tag">Redis 7.2</span>
+                  <span class="project-tag">Hybrid RRF</span>
+                  <span class="project-tag">Docker Compose</span>
+                </div>
+                <div class="project-footer pt-3 border-top mt-auto" style="border-color: var(--border-color)!important;">
+                  <a href="https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot" target="_blank" rel="noopener noreferrer"
+                    class="project-link fw-semibold small" aria-label="RetailMind GitHub Repo">
+                    <i class="bi bi-github"></i> Code
+                  </a>
+                  <a href="https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot#readme" target="_blank" rel="noopener noreferrer"
+                    class="project-link text-cyan fw-semibold small" aria-label="RetailMind System Documentation">
+                    Architecture & Demo <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </div>
               </div>

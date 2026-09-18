@@ -68,11 +68,15 @@ A modern, high-performance, and fully responsive personal portfolio for **Bittu 
   5. **Cloud, DevOps & Observability**: AWS (EC2/S3/ECR/IAM/VPC/CloudWatch), Kubernetes, Docker, Terraform, Ansible, Jenkins, Prometheus, Grafana, ELK Stack.
 
 ### 5. 💼 Featured Production Projects
-- **Flagship Project**: **MedAssist AI FDE RAG** ([GitHub Repository](https://github.com/bittush8789/medassist-ai-fde-rag))
+- **1. MedAssist AI FDE RAG** ([GitHub Repository](https://github.com/bittush8789/medassist-ai-fde-rag))
   - Two-Stage Retrieval architecture (ChromaDB vector pre-filter + BGE Cross-Encoder re-ranker).
   - High-acuity clinical intelligence assistant with multi-tenant document isolation and zero-leakage RBAC.
   - Sub-1.8s Groq LLaMA 3.3 inference SLA with 100% grounded citations and verified page references.
-- Interactive card with high-resolution UI preview (`projects/chat-interface.png`), source code repository links, system design documentation, and deep architecture preview modal.
+- **2. RetailMind AI FDE RAG** ([GitHub Repository](https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot))
+  - Production-ready retail operations RAG chatbot with Hybrid Retrieval (ChromaDB + BM25 RRF).
+  - High-throughput Redis query cache and Groq LLaMA Prompt Guard 22M injection security.
+  - Sub-second operations query answering with structured document and page citations.
+- Interactive cards with high-resolution UI previews (`projects/chat-interface.png`, `projects/Retails.png`), source code links, system documentation, and deep architecture preview modals.
 
 ### 6. 📈 Experience Timeline
 - Chronological engineering trajectory detailing DevOps & MLOps engineering work at **EXL Service** (Noida, India).
@@ -117,7 +121,8 @@ New-portfolio/
 │       ├── FDE.png                  # Who is an AI FDE banner graphic
 │       └── escbash-*.png            # Verification certificate previews
 ├── projects/
-│   └── chat-interface.png           # MedAssist AI FDE RAG clinical UI preview
+│   ├── chat-interface.png           # MedAssist AI FDE RAG clinical UI preview
+│   └── Retails.png                  # RetailMind operations chatbot UI preview
 ├── css/
 │   └── style.css                    # Design system, CSS variables & responsive queries
 ├── js/

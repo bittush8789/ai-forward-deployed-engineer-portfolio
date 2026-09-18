@@ -153,6 +153,21 @@ const projectData = {
     tech: ['FastAPI', 'Python 3.11', 'LangChain', 'Groq LLaMA 3.3', 'ChromaDB', 'BGE Cross-Encoder', 'Docker', 'JWT RBAC', 'Pytest'],
     github: 'https://github.com/bittush8789/medassist-ai-fde-rag',
     demo: 'https://github.com/bittush8789/medassist-ai-fde-rag#readme'
+  },
+  'retailmind': {
+    title: 'RetailMind: Retail Operations RAG Chatbot',
+    category: 'Enterprise AI / Retail Operations & LLMOps',
+    image: 'projects/Retails.png',
+    description: 'Production-ready retail operations assistant indexing store SOPs, return policies, and product catalogs with Hybrid Retrieval (ChromaDB + BM25 RRF), Redis caching, and LLaMA Prompt Guard security.',
+    architecture: 'FastAPI REST backend, LangChain orchestrator, ChromaDB dense vector search + BM25 reciprocal rank fusion, Cross-Encoder re-ranker, Redis query cache, Groq Prompt Guard 22M, and Groq LLaMA 3.3 70B inference.',
+    metrics: [
+      { label: 'Prompt Security', val: 'Prompt Guard 22M' },
+      { label: 'Caching Tier', val: 'Redis 7.2 TTL' },
+      { label: 'Retrieval Type', val: 'Hybrid RRF' }
+    ],
+    tech: ['FastAPI', 'Python 3.11', 'LangChain 0.3', 'Groq LLaMA 3.3 70B', 'ChromaDB', 'Redis 7.2', 'Prompt Guard', 'Docker Compose'],
+    github: 'https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot',
+    demo: 'https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot#readme'
   }
 };
 
