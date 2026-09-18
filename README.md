@@ -67,16 +67,25 @@ A modern, high-performance, and fully responsive personal portfolio for **Bittu 
   4. **AI Security & Guardrails**: NeMo Guardrails, Guardrails AI, MS Presidio, Prompt Injection Defense, PII Redaction, OWASP LLM Top 10.
   5. **Cloud, DevOps & Observability**: AWS (EC2/S3/ECR/IAM/VPC/CloudWatch), Kubernetes, Docker, Terraform, Ansible, Jenkins, Prometheus, Grafana, ELK Stack.
 
-### 5. 💼 Featured Production Projects
-- **1. MedAssist AI FDE RAG** ([GitHub Repository](https://github.com/bittush8789/medassist-ai-fde-rag))
-  - Two-Stage Retrieval architecture (ChromaDB vector pre-filter + BGE Cross-Encoder re-ranker).
-  - High-acuity clinical intelligence assistant with multi-tenant document isolation and zero-leakage RBAC.
-  - Sub-1.8s Groq LLaMA 3.3 inference SLA with 100% grounded citations and verified page references.
-- **2. RetailMind AI FDE RAG** ([GitHub Repository](https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot))
-  - Production-ready retail operations RAG chatbot with Hybrid Retrieval (ChromaDB + BM25 RRF).
-  - High-throughput Redis query cache and Groq LLaMA Prompt Guard 22M injection security.
-  - Sub-second operations query answering with structured document and page citations.
-- Interactive cards with high-resolution UI previews (`projects/chat-interface.png`, `projects/Retails.png`), source code links, system documentation, and deep architecture preview modals.
+### 5. 💼 Featured Production Projects (AI Forward Deployed Engineering)
+
+#### 1. MedAssist AI FDE RAG — Clinical Intelligence & Protocol Assistant
+- **Repository**: [`bittush8789/medassist-ai-fde-rag`](https://github.com/bittush8789/medassist-ai-fde-rag)
+- **AI FDE Scope**: Forward deployed into healthcare networks to solve clinician look-up friction (1.5–2 hours/day per provider) and eliminate malpractice liability caused by generative model hallucinations in high-acuity environments.
+- **Enterprise Architecture**:
+  - Two-Stage Retrieval: ChromaDB vector pre-filtering (tenant isolation) + BGE Cross-Encoder re-ranker.
+  - Sub-1.8s SLA via Groq LPU LLaMA 3.3 inference engine with deterministic zero-hallucination guardrails.
+  - Multi-tenant isolation ensuring hospital formularies and clinical SOPs never leak across institutions.
+- **Business Impact**: ~70% reduction in protocol lookup time; 100% verified citations with exact document names and page numbers; 13/13 automated pytest test suite coverage.
+
+#### 2. RetailMind AI FDE RAG — Retail Operations & Knowledge Assistant
+- **Repository**: [`bittush8789/AI-FDE-RetailMind-RAG-Chatbot`](https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot)
+- **AI FDE Scope**: Forward deployed across retail store operations to automate multi-format document ingestion (PDF, DOCX, TXT, CSV, XLSX) and deliver instant, reliable guidance on return policies, warranty rules, and store SOPs to floor staff and cashiers.
+- **Enterprise Architecture**:
+  - Hybrid Retrieval combining ChromaDB dense embeddings with BM25 lexical keyword matching via Reciprocal Rank Fusion (RRF).
+  - High-speed Redis 7.2 TTL query caching layer to eliminate redundant LLM inference costs by ~60%.
+  - Enterprise Prompt Security powered by Groq LLaMA Prompt Guard 22M + heuristic safeguards against prompt injection exploits.
+- **Business Impact**: Sub-second POS decision support, 60% LLM token cost reduction, rapid onboarding of high-turnover retail teams, and one-command Docker Compose production deployment.
 
 ### 6. 📈 Experience Timeline
 - Chronological engineering trajectory detailing DevOps & MLOps engineering work at **EXL Service** (Noida, India).

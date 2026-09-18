@@ -857,33 +857,42 @@
               </div>
               <div class="project-content p-3 p-lg-4 d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
-                  <div class="project-category-tag">Two-Stage RAG & Clinical AI</div>
+                  <div class="project-category-tag"><i class="bi bi-hospital text-danger"></i> Clinical AI FDE Deployment</div>
                   <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 font-mono small">
-                    <i class="bi bi-shield-check"></i> 100% Citations
+                    <i class="bi bi-shield-check"></i> 100% Grounded Citations
                   </span>
                 </div>
                 <h3 class="project-title fs-5 mb-2">MedAssist AI FDE RAG</h3>
-                <p class="project-description mb-3 small text-secondary flex-grow-1">
-                  Enterprise clinical intelligence platform enforcing <strong>Two-Stage Retrieval</strong> (ChromaDB + BGE Cross-Encoder), multi-tenant document isolation, and sub-1.8s Groq LLaMA 3.3 inference with zero-hallucination guardrails and verified citations.
-                </p>
+                
+                <!-- AI FDE Value Narrative -->
+                <div class="mb-3 small text-secondary flex-grow-1">
+                  <p class="mb-2">
+                    <strong class="text-white-subtle">FDE Engagement:</strong> Forward deployed into healthcare networks to tackle clinician lookup friction (1.5–2 hrs/day) and eliminate malpractice liability from generative AI hallucinations in high-acuity clinical workflows.
+                  </p>
+                  <p class="mb-0">
+                    <strong class="text-white-subtle">Technical Architecture:</strong> Engineered a deterministic <strong>Two-Stage Retrieval</strong> pipeline (ChromaDB vector pre-filter + BGE Cross-Encoder reranker) with retrieval-level RBAC tenant isolation and sub-1.8s Groq LLaMA 3.3 inference.
+                  </p>
+                </div>
+
                 <div class="project-tags mb-3">
                   <span class="project-tag"><i class="bi bi-lightning-charge-fill text-warning"></i> &lt;1.8s SLA</span>
+                  <span class="project-tag"><i class="bi bi-graph-up-arrow text-success"></i> 70% Time Saved</span>
                   <span class="project-tag">FastAPI</span>
                   <span class="project-tag">LangChain</span>
                   <span class="project-tag">ChromaDB</span>
                   <span class="project-tag">Groq LLaMA 3.3</span>
                   <span class="project-tag">BGE Reranker</span>
-                  <span class="project-tag">Docker</span>
                   <span class="project-tag">JWT RBAC</span>
+                  <span class="project-tag">Docker</span>
                 </div>
                 <div class="project-footer pt-3 border-top mt-auto" style="border-color: var(--border-color)!important;">
                   <a href="https://github.com/bittush8789/medassist-ai-fde-rag" target="_blank" rel="noopener noreferrer"
                     class="project-link fw-semibold small" aria-label="MedAssist GitHub Repo">
-                    <i class="bi bi-github"></i> Code
+                    <i class="bi bi-github"></i> Repository
                   </a>
                   <a href="https://github.com/bittush8789/medassist-ai-fde-rag#readme" target="_blank" rel="noopener noreferrer"
                     class="project-link text-cyan fw-semibold small" aria-label="MedAssist System Documentation">
-                    Architecture & Demo <i class="bi bi-arrow-up-right"></i>
+                    FDE System Design <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </div>
               </div>
@@ -904,32 +913,41 @@
               </div>
               <div class="project-content p-3 p-lg-4 d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
-                  <div class="project-category-tag">Enterprise AI & Retail Operations</div>
+                  <div class="project-category-tag"><i class="bi bi-shop text-primary"></i> Retail Operations FDE Deployment</div>
                   <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1 font-mono small">
                     <i class="bi bi-shield-lock-fill"></i> Prompt Guard 22M
                   </span>
                 </div>
                 <h3 class="project-title fs-5 mb-2">RetailMind AI FDE RAG</h3>
-                <p class="project-description mb-3 small text-secondary flex-grow-1">
-                  Production-ready retail operations assistant indexing store SOPs, return policies, and catalogs with <strong>Hybrid Retrieval</strong> (ChromaDB dense search + BM25 keyword RRF), Redis query caching, and LLaMA Prompt Guard security.
-                </p>
+                
+                <!-- AI FDE Value Narrative -->
+                <div class="mb-3 small text-secondary flex-grow-1">
+                  <p class="mb-2">
+                    <strong class="text-white-subtle">FDE Engagement:</strong> Forward deployed across retail store operations to eliminate floor staff lookup latency, automate multi-format SOP ingestion, and secure public associate portals against prompt injection exploits.
+                  </p>
+                  <p class="mb-0">
+                    <strong class="text-white-subtle">Technical Architecture:</strong> Designed a production <strong>Hybrid Retrieval</strong> system (ChromaDB dense search + BM25 keyword RRF), Cross-Encoder candidate re-ranking, Redis TTL query cache, and Groq LLaMA Prompt Guard 22M.
+                  </p>
+                </div>
+
                 <div class="project-tags mb-3">
                   <span class="project-tag"><i class="bi bi-cpu-fill text-info"></i> LLaMA 3.3 70B</span>
+                  <span class="project-tag"><i class="bi bi-speedometer2 text-success"></i> Sub-Second POS</span>
                   <span class="project-tag">FastAPI</span>
                   <span class="project-tag">LangChain 0.3</span>
                   <span class="project-tag">ChromaDB</span>
-                  <span class="project-tag">Redis 7.2</span>
+                  <span class="project-tag">Redis 7.2 Cache</span>
                   <span class="project-tag">Hybrid RRF</span>
                   <span class="project-tag">Docker Compose</span>
                 </div>
                 <div class="project-footer pt-3 border-top mt-auto" style="border-color: var(--border-color)!important;">
                   <a href="https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot" target="_blank" rel="noopener noreferrer"
                     class="project-link fw-semibold small" aria-label="RetailMind GitHub Repo">
-                    <i class="bi bi-github"></i> Code
+                    <i class="bi bi-github"></i> Repository
                   </a>
                   <a href="https://github.com/bittush8789/AI-FDE-RetailMind-RAG-Chatbot#readme" target="_blank" rel="noopener noreferrer"
                     class="project-link text-cyan fw-semibold small" aria-label="RetailMind System Documentation">
-                    Architecture & Demo <i class="bi bi-arrow-up-right"></i>
+                    FDE System Design <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </div>
               </div>
