@@ -93,6 +93,15 @@ A modern, high-performance, and fully responsive personal portfolio for **Bittu 
   - End-to-end consulting deliverables: Discovery, Data Inventory, 4-tier Governance taxonomy, Risk Assessment, SOW, ROI Analysis ($1.08M annual savings, 332% ROI), and UAT Runbook.
 - **Business Impact**: $1.08M projected annual savings, 2.8 month payback period, 100% PII masking compliance, and 15/15 automated pytest test suite coverage.
 
+#### 4. FinAssist GPT AI FDE RAG — Enterprise FinTech Knowledge Assistant
+- **Repository**: [`bittush8789/enterprise-fintech-rag-ai-fde`](https://github.com/bittush8789/enterprise-fintech-rag-ai-fde)
+- **AI FDE Scope**: Forward deployed into modern FinTech platforms to enforce fine-grained role-based policy access, automated Luhn-validated credit card & PII sanitization, and mock transaction ledger diagnostics.
+- **Enterprise Architecture**:
+  - 6-Tier RBAC Category Isolation (`customer`, `support_agent`, `developer`, `fraud_analyst`, `compliance_officer`, `admin`) restricting vector retrieval strictly by role scope.
+  - SentenceTransformers (`all-MiniLM-L6-v2`) vectorization across 20 FinTech policy documents (49 semantic chunks) with ChromaDB persistent collections.
+  - Ultra-low latency Groq Cloud inference with deterministic fallback, zero-hallucination verification, and real-time transaction clearing diagnostics.
+- **Business Impact**: Instant, audit-compliant answers on dispute rules and transaction SLAs; elimination of regulatory liability; full Docker containerization.
+
 ### 6. 📈 Experience Timeline
 - Chronological engineering trajectory detailing DevOps & MLOps engineering work at **EXL Service** (Noida, India).
 - Highlights automated CI/CD, Kubernetes container orchestration, model training/tracking pipelines, Terraform IaC, and Prometheus/Grafana SRE telemetry.
@@ -138,7 +147,8 @@ New-portfolio/
 ├── projects/
 │   ├── chat-interface.png           # MedAssist AI FDE RAG clinical UI preview
 │   ├── Retails.png                  # RetailMind operations chatbot UI preview
-│   └── bank.png                     # BankAssist AI enterprise banking knowledge portal
+│   ├── bank.png                     # BankAssist AI enterprise banking knowledge portal
+│   └── fintech.png                  # FinAssist GPT enterprise FinTech knowledge assistant
 ├── css/
 │   └── style.css                    # Design system, CSS variables & responsive queries
 ├── js/

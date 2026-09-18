@@ -183,6 +183,21 @@ const projectData = {
     tech: ['FastAPI 0.109', 'Python 3.11', 'Groq Qwen 3.6-27B', 'ChromaDB Docker', 'MySQL 8.0', 'Presidio PII', 'Docker Compose', 'Pytest (100%)'],
     github: 'https://github.com/bittush8789/enterprise-banking-fde-rag',
     demo: 'https://github.com/bittush8789/enterprise-banking-fde-rag#readme'
+  },
+  'finassist': {
+    title: 'FinAssist GPT: Enterprise FinTech RAG Knowledge Assistant',
+    category: 'FinTech, Payments & Regulatory AI | AI Forward Deployed Engineering',
+    image: 'projects/fintech.png',
+    description: 'Forward deployed into high-compliance FinTech environments to provide customers, support agents, developers, and compliance officers with instant, deterministic answers on transaction limits, fee schedules, chargeback policies, and API integration runbooks. Enforces strict zero-hallucination verification against 20 pre-indexed FinTech policy documents.',
+    architecture: 'Engineered an RBAC-guarded RAG platform: 6-tier fine-grained Role-Based Access Control (customer, support, dev, fraud analyst, compliance, admin), automated PII redaction (credit cards with Luhn check, SSNs, phone numbers), sentence-transformer vectorization into persistent ChromaDB collections, and low-latency Groq Cloud LLM synthesis. Includes mock real-time transaction diagnostics ledger with SLA clearing verification.',
+    metrics: [
+      { label: 'Access Control', val: '6-Tier RBAC' },
+      { label: 'PII Protection', val: 'Luhn Redaction' },
+      { label: 'Knowledge Base', val: '20 Policies' }
+    ],
+    tech: ['FastAPI 0.110+', 'Python 3.11', 'Groq Cloud LLM', 'ChromaDB', 'SentenceTransformers', 'JWT RBAC', 'Docker Compose', 'Mock Ledger'],
+    github: 'https://github.com/bittush8789/enterprise-fintech-rag-ai-fde',
+    demo: 'https://github.com/bittush8789/enterprise-fintech-rag-ai-fde#readme'
   }
 };
 
