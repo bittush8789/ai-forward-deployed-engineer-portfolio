@@ -198,6 +198,21 @@ const projectData = {
     tech: ['FastAPI 0.110+', 'Python 3.11', 'Groq Cloud LLM', 'ChromaDB', 'SentenceTransformers', 'JWT RBAC', 'Docker Compose', 'Mock Ledger'],
     github: 'https://github.com/bittush8789/enterprise-fintech-rag-ai-fde',
     demo: 'https://github.com/bittush8789/enterprise-fintech-rag-ai-fde#readme'
+  },
+  'legalassist': {
+    title: 'LegalAssist AI: Legal Intelligence & Contract Analysis Platform',
+    category: 'LegalTech & Corporate Governance | AI Forward Deployed Engineering',
+    image: 'projects/legal.png',
+    description: 'Forward deployed into corporate legal departments and law firms to eliminate hours spent manually reviewing dense contracts, NDAs, and corporate policies while strictly enforcing a zero-hallucination mandate ("No Document Evidence -> No Answer"). Enables semantic clause searching, side-by-side contract comparison, and voice-activated legal queries.',
+    architecture: 'Engineered with clause-aware legal chunking (800 chars / 150 overlap preserving SECTION, CLAUSE, and ARTICLE hierarchy), hybrid retrieval (cosine similarity + lexical matching), Groq LPU inference powered by openai/gpt-oss-120b, Web Speech API real-time voice transcription, and 5-layer AI security guardrails (input prompt injection filter, tenant RBAC, untrusted document sanitizer, and output citation integrity validator). Kubernetes Kind cluster ready with 12/12 automated pytest coverage.',
+    metrics: [
+      { label: 'Security Guard', val: '5-Layer AI Guard' },
+      { label: 'LLM Engine', val: 'Groq 120B LPU' },
+      { label: 'Deployment Tier', val: 'K8s Multi-Node' }
+    ],
+    tech: ['FastAPI 0.110+', 'Python 3.11', 'Groq GPT-OSS-120B', 'ChromaDB', 'Kubernetes (Kind)', 'Web Speech API', 'Docker Compose', 'Pytest (100%)'],
+    github: 'https://github.com/bittush8789/ai-fde-legal-document-assistant',
+    demo: 'https://github.com/bittush8789/ai-fde-legal-document-assistant#readme'
   }
 };
 

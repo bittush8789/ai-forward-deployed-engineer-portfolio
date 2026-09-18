@@ -102,6 +102,17 @@ A modern, high-performance, and fully responsive personal portfolio for **Bittu 
   - Ultra-low latency Groq Cloud inference with deterministic fallback, zero-hallucination verification, and real-time transaction clearing diagnostics.
 - **Business Impact**: Instant, audit-compliant answers on dispute rules and transaction SLAs; elimination of regulatory liability; full Docker containerization.
 
+#### 5. LegalAssist AI FDE RAG — Legal Intelligence & Contract Analysis Platform
+- **Repository**: [`bittush8789/ai-fde-legal-document-assistant`](https://github.com/bittush8789/ai-fde-legal-document-assistant)
+- **AI FDE Scope**: Forward deployed into corporate legal departments and law firms to eliminate manual contract lookup friction, accelerate NDA & policy reviews, and enforce a strict zero-hallucination mandate ("No Document Evidence -> No Answer").
+- **Enterprise Architecture**:
+  - Clause-aware legal document chunking (800 chars / 150 overlap) respecting SECTION, CLAUSE, and ARTICLE legal boundaries.
+  - Hybrid retrieval (cosine similarity + lexical matching) paired with Groq LPU inference (`openai/gpt-oss-120b`).
+  - Web Speech API real-time voice input transcription for hands-free courtroom and attorney review.
+  - 5-Layer AI Security Guardrails (input prompt injection filter, tenant RBAC, untrusted document sanitizer, and output citation integrity validator).
+- **Business Impact**: Sub-second clause discovery, elimination of ungrounded legal hallucination liability, Kubernetes Kind deployment readiness, and 12/12 automated pytest test suite coverage.
+
+
 ### 6. 📈 Experience Timeline
 - Chronological engineering trajectory detailing DevOps & MLOps engineering work at **EXL Service** (Noida, India).
 - Highlights automated CI/CD, Kubernetes container orchestration, model training/tracking pipelines, Terraform IaC, and Prometheus/Grafana SRE telemetry.
@@ -148,7 +159,8 @@ New-portfolio/
 │   ├── chat-interface.png           # MedAssist AI FDE RAG clinical UI preview
 │   ├── Retails.png                  # RetailMind operations chatbot UI preview
 │   ├── bank.png                     # BankAssist AI enterprise banking knowledge portal
-│   └── fintech.png                  # FinAssist GPT enterprise FinTech knowledge assistant
+│   ├── fintech.png                  # FinAssist GPT enterprise FinTech knowledge assistant
+│   └── legal.png                    # LegalAssist AI legal document intelligence preview
 ├── css/
 │   └── style.css                    # Design system, CSS variables & responsive queries
 ├── js/
