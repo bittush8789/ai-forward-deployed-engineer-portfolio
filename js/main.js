@@ -230,21 +230,22 @@ const projectData = {
     demo: 'https://github.com/bittush8789/enterprise-travelassist-ai-fde-rag#readme'
   },
   'waterops': {
-    title: 'WaterOps AI: Multi-Department Water Utility Knowledge Assistant',
-    category: 'Critical Infrastructure & Water Utilities | AI Forward Deployed Engineering',
+    title: 'WaterOps AI: Multi-Department Water Utility Operations RAG Platform',
+    category: 'Water Utility & Public Infrastructure | AI Forward Deployed Engineering',
     image: 'projects/waterops.png',
-    description: 'Forward deployed into municipal and industrial water utilities (UK water operations model: DWI, OFWAT, and EA compliance) to unify standard operating procedures across 13 siloed departments—including Leakage, Water Quality, Incident Management, Operations, and Billing—with zero-hallucination verification and safety-critical hazard alerts.',
-    architecture: 'Multi-department RAG architecture featuring granular Role-Based Access Control (Admin, Manager, Agent) and pre-retrieval ChromaDB metadata filtering (ensuring agents only retrieve from authorized, approved SOPs). Powered by Groq LPU inference (openai/gpt-oss-120b), prompt injection guardrails, safety-critical query detector (attaching immediate emergency protocols for contamination/bursts), and MySQL/SQLite relational audit logging with feedback persistence.',
+    description: 'Forward deployed into UK water utility operations to provide multi-department staff with instant, RBAC-gated answers from approved Standard Operating Procedures (SOPs). Enforces safety-critical query interception, zero-hallucination grounding, and comprehensive audit logging across 13 dedicated operational departments.',
+    architecture: 'JWT-authenticated RBAC (Admin/Manager/Agent roles) with department-level authorization verification. ChromaDB vector store with strict pre-retrieval metadata filtering (department IN authorized_departments AND status = "approved"). Prompt injection & jailbreak detection guardrails with automatic safety-critical query warnings (contamination, bursts, boil-water notices). Cosine similarity gating (>= 0.35) with safe fallback. Groq LPU inference engine (openai/gpt-oss-120b) with 10 strict behavioral directives. MySQL/SQLite relational persistence for user accounts, sessions, document catalog, feedback, and security audit logs.',
     metrics: [
-      { label: 'Scope', val: '13 Departments' },
-      { label: 'Security', val: 'RBAC + Safety Alert' },
-      { label: 'LLM Engine', val: 'Groq 120B LPU' }
+      { label: 'Departments', val: '13-Dept RBAC' },
+      { label: 'LLM Engine', val: 'Groq 120B LPU' },
+      { label: 'Guardrails', val: 'Safety + Injection' }
     ],
-    tech: ['FastAPI', 'Python 3.11', 'Groq GPT-OSS-120B', 'ChromaDB', 'SentenceTransformers', 'JWT RBAC', 'MySQL / SQLite', 'Docker'],
+    tech: ['FastAPI', 'Python 3.11', 'Groq GPT-OSS-120B', 'ChromaDB', 'JWT RBAC', 'MySQL / SQLite', 'HuggingFace Embeddings', 'Vanilla JS Frontend'],
     github: 'https://github.com/bittush8789/waterops-ai-fde-rag',
     demo: 'https://github.com/bittush8789/waterops-ai-fde-rag#readme'
   }
 };
+
 
 function initProjectModals() {
   const modalElement = document.getElementById('projectDetailModal');

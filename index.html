@@ -1178,7 +1178,7 @@
           <div class="col-12 col-md-6 col-lg-4 project-item-col" data-category="ai-agent full-stack vision-data">
             <div class="project-card shadow-sm h-100">
               <div class="project-img-wrapper" style="aspect-ratio: 16 / 9; max-height: 220px;">
-                <img src="projects/waterops.png" alt="WaterOps AI Enterprise Water Utility Platform Preview" class="project-img w-100 h-100" style="object-fit: cover; object-position: top center;"
+                <img src="projects/waterops.png" alt="WaterOps AI Enterprise Water Utility Operations Dashboard Preview" class="project-img w-100 h-100" style="object-fit: cover; object-position: top center;"
                   loading="lazy">
                 <div class="project-overlay">
                   <button class="btn btn-ai-primary btn-sm btn-project-details" data-project="waterops">
@@ -1188,40 +1188,40 @@
               </div>
               <div class="project-content p-3 p-lg-4 d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
-                  <div class="project-category-tag"><i class="bi bi-droplet-half text-info"></i> Critical Utilities FDE</div>
-                  <span class="badge bg-info-subtle text-info border border-info-subtle px-2 py-1 font-mono small">
-                    <i class="bi bi-diagram-3-fill"></i> 13-Department RAG
+                  <div class="project-category-tag"><i class="bi bi-droplet-fill text-info"></i> Water Utility FDE</div>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 font-mono small">
+                    <i class="bi bi-diagram-3"></i> 13-Dept RBAC RAG
                   </span>
                 </div>
                 <h3 class="project-title fs-5 mb-2">WaterOps AI FDE RAG</h3>
-                
+
                 <!-- AI FDE Value Narrative -->
                 <div class="mb-3 small text-secondary flex-grow-1">
                   <p class="mb-2">
-                    <strong class="text-white-subtle">FDE Engagement:</strong> Forward deployed into municipal water utilities to unify SOP knowledge across 13 siloed operational units (Leakage, Water Quality, Incident Management, Billing) under strict DWI and OFWAT regulatory compliance.
+                    <strong class="text-white-subtle">FDE Engagement:</strong> Forward deployed into UK water utility operations to give multi-department staff (Billing, Leakage, Water Quality, Incident Management, Regulatory) instant, RBAC-gated answers from approved SOPs—with mandatory safety-critical query interception.
                   </p>
                   <p class="mb-0">
-                    <strong class="text-white-subtle">Technical Architecture:</strong> RBAC department routing, ChromaDB metadata pre-filtering, safety-critical query detector (contamination & boil-water alerts), Groq LPU inference (`gpt-oss-120b`), and audit logging.
+                    <strong class="text-white-subtle">Technical Architecture:</strong> JWT RBAC (Admin/Manager/Agent), 13-department ChromaDB metadata filtering, prompt injection & jailbreak guardrails, Groq LPU inference (`gpt-oss-120b`), cosine similarity gating (>= 0.35), and MySQL/SQLite full audit logging.
                   </p>
                 </div>
 
                 <div class="project-tags mb-3">
-                  <span class="project-tag"><i class="bi bi-shield-exclamation text-warning"></i> Safety Critical</span>
-                  <span class="project-tag"><i class="bi bi-person-badge text-cyan"></i> RBAC Routing</span>
-                  <span class="project-tag">13 Depts</span>
+                  <span class="project-tag"><i class="bi bi-shield-lock-fill text-warning"></i> JWT RBAC</span>
+                  <span class="project-tag"><i class="bi bi-diagram-3 text-info"></i> 13 Depts</span>
                   <span class="project-tag">FastAPI</span>
                   <span class="project-tag">ChromaDB</span>
                   <span class="project-tag">Groq 120B</span>
-                  <span class="project-tag">MySQL</span>
-                  <span class="project-tag">Docker</span>
+                  <span class="project-tag">MySQL / SQLite</span>
+                  <span class="project-tag">Safety Guardrails</span>
+                  <span class="project-tag">Audit Logs</span>
                 </div>
                 <div class="project-footer pt-3 border-top mt-auto" style="border-color: var(--border-color)!important;">
                   <a href="https://github.com/bittush8789/waterops-ai-fde-rag" target="_blank" rel="noopener noreferrer"
-                    class="project-link fw-semibold small" aria-label="WaterOps GitHub Repo">
+                    class="project-link fw-semibold small" aria-label="WaterOps AI GitHub Repo">
                     <i class="bi bi-github"></i> Repository
                   </a>
                   <a href="https://github.com/bittush8789/waterops-ai-fde-rag#readme" target="_blank" rel="noopener noreferrer"
-                    class="project-link text-cyan fw-semibold small" aria-label="WaterOps System Documentation">
+                    class="project-link text-cyan fw-semibold small" aria-label="WaterOps AI System Documentation">
                     FDE System Design <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </div>
@@ -1231,6 +1231,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- =========================================================================
          6. Experience & Timeline Section
